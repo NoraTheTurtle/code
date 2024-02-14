@@ -21,7 +21,7 @@ courses: { compsci: {week: 6} }
     
     let canvas = document.getElementById('canvas');
     let c = canvas.getContext('2d');
-    canvas.width = 1500;
+    canvas.width = 1000;
     canvas.height = 400;
     let gravity = 1.5;
 
@@ -74,7 +74,7 @@ courses: { compsci: {week: 6} }
     class Tube {
         constructor(image) {
             this.position = {
-                x: 1200,
+                x: 900,
                 y: 190
             }
             this.image = image;

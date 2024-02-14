@@ -67,7 +67,7 @@ courses: { compsci: {week: 1} }
     }
 
     #setting input:checked + label{
-        background-color: #57ff8f;
+        background-color: #264080;
         color: #FFFFFF;
     }
 </style>
@@ -94,7 +94,7 @@ courses: { compsci: {week: 1} }
         <canvas id="snake" class="wrap" width="320" height="320" tabindex="1"></canvas>
         <!-- Settings Screen -->
         <div id="setting" class="py-4 text-light">
-            <p>Settings Screen, press <span style="background-color: #4aff7d; color: #FFFFFF">space</span> to go back to playing</p>
+            <p>Settings Screen, press <span style="background-color: #264080; color: #FFFFFF">space</span> to go back to playing</p>
             <a id="new_game2" class="link-alert">new game</a>
             <br>
             <p>Speed:
@@ -272,7 +272,7 @@ courses: { compsci: {week: 1} }
             }
             // Repaint canvas
             ctx.beginPath();
-            ctx.fillStyle = "DarkGreen";
+            ctx.fillStyle = "blue";
             ctx.fillRect(0, 0, canvas.width, canvas.height);
             // Paint snake
             for(let i = 0; i < snake.length; i++){
@@ -378,8 +378,8 @@ courses: { compsci: {week: 1} }
         /////////////////////////////////////////////////////////////
         let setWall = function(wall_value){
             wall = wall_value;
-            if(wall === 0){screen_snake.style.borderColor = "#2edb5f";}
-            if(wall === 1){screen_snake.style.borderColor = "#2edb5f";}
+            if(wall === 0){screen_snake.style.borderColor = "#264096";}
+            if(wall === 1){screen_snake.style.borderColor = "#264096";}
         }
     })();
 </script>

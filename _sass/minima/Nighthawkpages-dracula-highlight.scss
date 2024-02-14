@@ -1,7 +1,7 @@
 // Override Syntax Highlighting In Minima With the Dracula Theme: https://draculatheme.com/
 // If you wish to override any of this CSS, do so in _sass/minima/custom-styles.css
  
-$dt-gray-dark: #282a36;  // Background
+$dt-gray-dark: #5c6bbf;  // Background
 $dt-code-cell-background: #323443;
 $dt-gray: #44475a;       // Current Line & Selection
 $dt-gray-light: #f8f8f2; // Foreground
@@ -28,7 +28,7 @@ $dt-green-light: rgb(172, 229, 145);
 }
 
 .language-python + .language-plaintext code { background-color: none !important; }
-.language-python + .language-plaintext pre  { background-color: #323443 !important; }
+.language-python + .language-plaintext pre  { background-color: #555ea8 !important; }
 
 // for Jupyter Notebook HTML Code Cells modified from https://www.fast.ai/public/css/hyde.css
 
@@ -37,7 +37,7 @@ $dt-green-light: rgb(172, 229, 145);
     margin-top:1.5rem !important;
     padding-bottom:0 !important;
     padding-top:0 !important;
-    background: #323443 !important;
+    background: #5760a7 !important;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
     font-family: Menlo, Monaco, Consolas, "Lucida Console", Roboto, Ubuntu, monospace;
