@@ -1,11 +1,11 @@
 # CSP course meta data
 Unit1:
-  title: Build a Lab Notebook
-  description:  Install Tools.  Design lab notebook.  Learn GitHub Pages. Work with Pair (pair name). 
+  title: trimester 1
+  description: plans & games made 
   start: 0
-  end: 3
+  end: 6
 Unit2:
-  title: Learn Language
-  description: Learn (JavaScript|Python|Java).  Start Agile development process.
-  start: 4
-  end: 7
+  title: Trimester 2
+  description: plans & games made
+  start: 7
+  end: 12
