@@ -11,4 +11,4 @@
 <br>
 <p>-Diffrent charecters for each player (less confusing)</p>
 
-<img src="{{site.baseurl}}/images/N@tm.jpeg" alt="Night At The Museaem!">
+<img src="{{site.baseurl}}images/N@tm.jpeg" alt="Night At The Museaem!">

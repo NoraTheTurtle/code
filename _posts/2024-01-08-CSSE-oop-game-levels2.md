@@ -1,6 +1,6 @@
 ---
 layout: base
-title: Platformer Game v2.0 
+title: mario game (added lvl)
 description: Incorporate student lessons. Gameplay includes enemies, platforms, parallax backgrounds, settings with local storage, etc.  This revision introduces Settings, Leaderboard and Multiplayer.
 type: collab
 courses: { compsci: {week: 14} }
