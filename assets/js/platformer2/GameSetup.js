@@ -191,6 +191,7 @@ const GameSetup = {
       backgrounds: {
         start: { src: "/images/platformer/backgrounds/home.png" },
         hills: { src: "/images/platformer/backgrounds/hills.png" },
+        water : {src: "/images/Water.png"},
         avenida: { src: "/images/platformer/backgrounds/avenidawide3.jpg" },
         mountains: { src: "/images/platformer/backgrounds/mountains.jpg" },
         clouds : { src: "/images/platformer/backgrounds/clouds.png"},
@@ -243,6 +244,19 @@ const GameSetup = {
           d: { row: 2, frames: 3, idleFrame: { column: 1, frames: 0 } }, // Left Movement 
           runningLeft: { row: 5, frames: 3, idleFrame: {column: 1, frames: 0} },
           runningRight: { row: 4, frames: 3, idleFrame: {column: 1, frames: 0} },
+        },
+        fish: {
+          src: "/images/fish.png",
+          width: 29,
+          height: 29,
+          scaleSize: 90,
+          speedRatio: 0.7,
+          w: { row: 4, frames: 2 },
+          wa: { row: 4, frames: 2 },
+          wd: { row: 4, frames: 2 },
+          a: { row: 1, frames: 2, idleFrame: { row: 1, frames: 0 } },
+          s: { row: 0, frames: 2 },
+          d: { row: 2, frames: 2, idleFrame: { row: 2, frames: 0 }}
         }
       },
       enemies: {
@@ -416,6 +430,28 @@ const GameSetup = {
         ];
         // Space Game Level added to the GameEnv ...
         new GameLevel( {tag: "space", callback: this.playerOffScreenCallBack, objects: spaceGameObjects} );
+
+        // Avenida Game Level definition...
+        const fishGameObjects = [
+          // GameObject(s), the order is important to z-index...
+          { name: 'water', id: 'background', class: Background, data: this.assets.backgrounds.water },
+          { name: 'grass', id: 'platform', class: Platform, data: this.assets.platforms.grass },
+          { name: 'blocks', id: 'jumpPlatform', class: BlockPlatform, data: this.assets.platforms.block, xPercentage: 0.2, yPercentage: 0.85 },
+          { name: 'blocks', id: 'jumpPlatform', class: BlockPlatform, data: this.assets.platforms.block, xPercentage: 0.2368, yPercentage: 0.85 },
+          { name: 'blocks', id: 'jumpPlatform', class: BlockPlatform, data: this.assets.platforms.block, xPercentage: 0.5, yPercentage: 0.85 },
+          { name: 'blocks', id: 'jumpPlatform', class: BlockPlatform, data: this.assets.platforms.block, xPercentage: 0.5368, yPercentage: 0.85 },
+          { name: 'goomba', id: 'goomba', class: Goomba, data: this.assets.enemies.goomba, xPercentage: 0.3, minPosition: 0.05},
+          { name: 'goomba', id: 'goomba', class: Goomba, data: this.assets.enemies.goomba, xPercentage:  0.5, minPosition: 0.3 },
+          { name: 'mushroom', id: 'mushroom', class: Mushroom, data: this.assets.enemies.mushroom, xPercentage: 0.09},
+          { name: 'goombaSpecial', id: 'goomba', class: Goomba, data: this.assets.enemies.goomba, xPercentage:  0.75, minPosition: 0.5 }, //this special name is used for random event 2 to make sure that only one of the Goombas ends the random event
+          { name: 'flyingGoomba', id: 'flyingGoomba', class: FlyingGoomba, data: this.assets.enemies.flyingGoomba, xPercentage:  0.5, minPosition:  0.05},
+          { name: 'flyingGoomba', id: 'flyingGoomba', class: FlyingGoomba, data: this.assets.enemies.flyingGoomba, xPercentage:  0.9, minPosition: 0.5},
+          { name: 'fish', id: 'player', class: Player, data: this.assets.players.fish },
+          { name: 'tube', id: 'tube', class: Tube, data: this.assets.obstacles.tube },
+          { name: 'complete', id: 'background', class: BackgroundTransitions,  data: this.assets.backgrounds.complete },
+          ];
+          // Avenida Game Level added to the GameEnv ...
+          new GameLevel( {tag: "fish", callback: this.playerOffScreenCallBack, objects: fishGameObjects } );
 
         // Game Over Level definition...
         const endGameObjects = [
