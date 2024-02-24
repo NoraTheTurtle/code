@@ -22,7 +22,7 @@ export class Tree extends GameObject {
         // Formula for Width is scaled: scaledWidth/scaledHeight == this.width/this.height
         const scaledWidth = scaledHeight * this.aspect_ratio;
         const treeX = .80 * GameEnv.innerWidth;
-        const treeY = (GameEnv.bottom - (.25 * scaledHeight));
+        const treeY = 350;
 
         // set variables used in Display and Collision algorithms
         this.bottom = treeY;
