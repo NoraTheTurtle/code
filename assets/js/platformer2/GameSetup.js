@@ -180,6 +180,8 @@ const GameSetup = {
         alien: { src: "/images/platformer/platforms/alien.png" },
         bricks: { src: "/images/platformer/platforms/brick_wall.png" },
         block: { src: "/images/platformer/platforms/brick_block.png" }, //MAY need 3 new variables: sizeRatio, widthRatio, and heightRatio
+        cloud: { src: "images/Cloud.png" },
+        bubble: { src: "/images/platformer/platforms/bubble.png" },
         itemBlock: {
           src: "/images/platformer/platforms/mario_block_spritesheet_v2.png",
           sizeRatio: 83.2,
@@ -254,7 +256,7 @@ const GameSetup = {
           height: 29,
           scaleSize: 90,
           speedRatio: 0.7,
-          w: { row: 4, frames: 2 },
+          w: { row: 3, frames: 2 },
           wa: { row: 4, frames: 2 },
           wd: { row: 4, frames: 2 },
           a: { row: 1, frames: 2, idleFrame: { row: 1, frames: 0 } },
@@ -445,10 +447,10 @@ const GameSetup = {
         const fishGameObjects = [
           // GameObject(s), the order is important to z-index...
           { name: 'water', id: 'background', class: Background, data: this.assets.backgrounds.water },
-          { name: 'blocks', id: 'jumpPlatform', class: BlockPlatform, data: this.assets.platforms.block, xPercentage: 0.2, yPercentage: 0.85 },
-          { name: 'blocks', id: 'jumpPlatform', class: BlockPlatform, data: this.assets.platforms.block, xPercentage: 0.2368, yPercentage: 0.85 },
-          { name: 'blocks', id: 'jumpPlatform', class: BlockPlatform, data: this.assets.platforms.block, xPercentage: 0.5, yPercentage: 0.85 },
-          { name: 'blocks', id: 'jumpPlatform', class: BlockPlatform, data: this.assets.platforms.block, xPercentage: 0.5368, yPercentage: 0.85 },
+          { name: 'blocks', id: 'jumpPlatform', class: BlockPlatform, data: this.assets.platforms.bubble, xPercentage: 0.2, yPercentage: 0.85 },
+          { name: 'blocks', id: 'jumpPlatform', class: BlockPlatform, data: this.assets.platforms.bubble, xPercentage: 0.2368, yPercentage: 0.85 },
+          { name: 'blocks', id: 'jumpPlatform', class: BlockPlatform, data: this.assets.platforms.bubble, xPercentage: 0.5, yPercentage: 0.85 },
+          { name: 'blocks', id: 'jumpPlatform', class: BlockPlatform, data: this.assets.platforms.bubble, xPercentage: 0.5368, yPercentage: 0.85 },
           { name: 'shark', id: 'shark', class: Shark, data: this.assets.enemies.shark, xPercentage: 0.3, minPosition: 0.05},
           { name: 'shark', id: 'shark', class: Shark, data: this.assets.enemies.shark, xPercentage:  0.5, minPosition: 0.3 },
           { name: 'mushroom', id: 'mushroom', class: Mushroom, data: this.assets.enemies.mushroom, xPercentage: 0.09},
