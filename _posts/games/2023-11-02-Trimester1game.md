@@ -1,6 +1,6 @@
 ---
 toc: true
-comments: false
+comments: true
 layout: post
 title: trimester 1 game
 description: deliver the amazon box into the house, but watch out for the burglers outside!

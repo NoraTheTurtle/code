@@ -1,6 +1,6 @@
 ---
 toc: true
-comments: false
+comments: True
 layout: post
 title: Ping Pong Game
 description: A simple ping pong game built with HTML, CSS, and JavaScript

@@ -1,7 +1,8 @@
 ---
 layout: base
 title: mario game (added lvl)
-description: Incorporate student lessons. Gameplay includes enemies, platforms, parallax backgrounds, settings with local storage, etc.  This revision introduces Settings, Leaderboard and Multiplayer.
+comments: true 
+description: 22 person collaboritve project (personal added level at the end)
 type: collab
 courses: { compsci: {week: 14} }
 image: /images/platformer/backgrounds/home.png

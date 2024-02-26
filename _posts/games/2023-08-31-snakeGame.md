@@ -1,6 +1,6 @@
 ---
 toc: true
-comments: false
+comments: true
 layout: post
 title: Snake Game!
 description: The game with the snake that eats apples

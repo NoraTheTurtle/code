@@ -17,6 +17,7 @@ import FlyingGoomba from './FlyingGoomba.js';
 import BlockPlatform from './BlockPlatform.js';
 import Mushroom from './Mushroom.js';
 import Coin from './Coin.js';
+import Shark from './shark.js';
 
 
 /* Coding Style Notes
@@ -270,6 +271,14 @@ const GameSetup = {
           speedRatio: 0.7,
           xPercentage: 0.6,
         },
+        shark: {
+          src: "/images/platformer/shark.png",
+          width: 448,
+          height: 452,
+          scaleSize: 100,
+          speedRatio: 0.7,
+          xPercentage: 0.6,
+        },
         flyingGoomba: {
           src: "/images/platformer/sprites/flying-goomba.png",
           width: 448,
@@ -440,10 +449,9 @@ const GameSetup = {
           { name: 'blocks', id: 'jumpPlatform', class: BlockPlatform, data: this.assets.platforms.block, xPercentage: 0.2368, yPercentage: 0.85 },
           { name: 'blocks', id: 'jumpPlatform', class: BlockPlatform, data: this.assets.platforms.block, xPercentage: 0.5, yPercentage: 0.85 },
           { name: 'blocks', id: 'jumpPlatform', class: BlockPlatform, data: this.assets.platforms.block, xPercentage: 0.5368, yPercentage: 0.85 },
-          { name: 'goomba', id: 'goomba', class: Goomba, data: this.assets.enemies.goomba, xPercentage: 0.3, minPosition: 0.05},
-          { name: 'goomba', id: 'goomba', class: Goomba, data: this.assets.enemies.goomba, xPercentage:  0.5, minPosition: 0.3 },
+          { name: 'shark', id: 'shark', class: Shark, data: this.assets.enemies.shark, xPercentage: 0.3, minPosition: 0.05},
+          { name: 'shark', id: 'shark', class: Shark, data: this.assets.enemies.shark, xPercentage:  0.5, minPosition: 0.3 },
           { name: 'mushroom', id: 'mushroom', class: Mushroom, data: this.assets.enemies.mushroom, xPercentage: 0.09},
-          { name: 'goombaSpecial', id: 'goomba', class: Goomba, data: this.assets.enemies.goomba, xPercentage:  0.75, minPosition: 0.5 }, //this special name is used for random event 2 to make sure that only one of the Goombas ends the random event
           { name: 'fish', id: 'player', class: Player, data: this.assets.players.fish },
           { name: 'complete', id: 'background', class: BackgroundTransitions,  data: this.assets.backgrounds.complete },
           { name: 'tree', id: 'tree', class: Tree, data: this.assets.obstacles.tree },
