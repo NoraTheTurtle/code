@@ -2,7 +2,7 @@
 toc: true
 comments: true
 layout: post
-title: Mario Game
+title: Mario Game (link)
 description: trimester 2, 22 person project
 type: tangibles
 courses: { compsci: {week: 13} }

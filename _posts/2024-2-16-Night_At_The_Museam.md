@@ -4,8 +4,8 @@ comments: true
 layout: post
 title: N@tm blog
 description: blog about night at the museam experience
-type: code
-courses: { compsci: {week: 13} }
+type: hacks
+courses: { compsci: {week: 12} }
 ---
 
 ### Night At The Museam Experience

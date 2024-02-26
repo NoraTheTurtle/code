@@ -3,8 +3,8 @@ layout: base
 title: mario game (added lvl)
 comments: true 
 description: 22 person collaboritve project (personal added level at the end)
-type: collab
-courses: { compsci: {week: 14} }
+type: hacks
+courses: { compsci: {week: 13} }
 image: /images/platformer/backgrounds/home.png
 ---
 
